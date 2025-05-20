@@ -11,9 +11,6 @@ Heres how you should format your biome.yml: <br>
 biome:
   repositories:
   - github.com/Example/ExampleRepo # Biome will automatically put the source from repositories specified into /pkg/{repository name}
-  project:
-    source:
-      - "src" # Source dir one.
 ```
 Thats it! All you need to get started with biome. 
 # Notes
