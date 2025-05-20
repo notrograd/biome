@@ -8,3 +8,4 @@ try {
 catch {
     Write-Error "Installation failed: $_"
 }
+
