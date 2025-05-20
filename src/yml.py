@@ -29,4 +29,3 @@ def Read(key: str):
         else:
             raise KeyError(f"Key '{key}' not found in biome.yml")
     return current
-
