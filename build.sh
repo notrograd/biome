@@ -2,10 +2,14 @@
 
 echo "Installing Biome..."
 
-if [ -f ".venv/bin/activate" ]; then
-    source .venv/bin/activate
+prefix="$HOME/.local"
+python3 -m pip install -e . --prefix "$prefix" > /dev/null 2>&1
+
+binpath="$prefix/bin"
+
+if ! grep -q "$binpath" <<< "$PATH"; then
+    echo "export PATH=\"\$PATH:$binpath\"" >> "$HOME/.bashrc"
+    echo "Added $binpath to PATH in .bashrc"
 fi
 
-python3 -m pip install -e . > /dev/null 2>&1
-
-echo "Done. Run 'biome help' to see a list of available commands."
+echo "Done. Restart your shell and run 'biome help'."
