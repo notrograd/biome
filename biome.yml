@@ -1,0 +1,11 @@
+# Copyright (c), 2025, Biome Build System.
+# All source code in the Biome Build System is licensed under the BSD-2 Clause.
+
+biome:
+  manager: "pip3"
+  dependencies:
+    - "install pyyaml"
+    - "install gitpython"
+  project:
+    source:
+      dirs: [ "src" ]
