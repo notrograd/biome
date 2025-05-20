@@ -12,7 +12,8 @@ biome:
   repositories:
   - github.com/Example/ExampleRepo # Biome will automatically put the source from repositories specified into /pkg/{repository name}
   project:
-    source: "MySourceRepository"
+    source:
+      - "src" # Source dir one.
 ```
 Thats it! All you need to get started with biome. 
 # Notes
