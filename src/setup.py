@@ -4,7 +4,7 @@ setup(
     name='biome',
     version='0.1.0',
     author='notrograd',
-    description='Biome Build System CLI',
+    description='Biome Build System.',
     license='BSD-2-Clause',
     packages=find_packages(),
     install_requires=[
@@ -17,7 +17,7 @@ setup(
         ]
     },
     classifiers=[
-        'License :: OSI Approved :: BSD License',
+        'License :: BSD License',
         'Programming Language :: Python :: 3',
     ],
 )

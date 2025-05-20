@@ -6,6 +6,3 @@ biome:
   dependencies:
     - "install pyyaml"
     - "install gitpython"
-  project:
-    source:
-      dirs: [ "src" ]
